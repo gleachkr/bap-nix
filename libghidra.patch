@@ -1,0 +1,36 @@
+diff --git a/lib/bap_ghidra/OMakefile b/lib/bap_ghidra/OMakefile
+index e9fe8dc4..07281f3b 100644
+--- a/lib/bap_ghidra/OMakefile
++++ b/lib/bap_ghidra/OMakefile
+@@ -4,7 +4,7 @@
+ 
+ CFLAGS += -O2
+ CXXFLAGS += -O2 -std=c++11 -fPIC -I$(ROOT)/lib/bap_disasm
+-OCAMLMKLIBFLAGS += -L/usr/lib/ghidra -ldecomp
++OCAMLMKLIBFLAGS += -L@libghidra@/usr/lib/ghidra -ldecomp
+ 
+ include _oasis_hier.om
+ 
+diff --git a/lib/bap_ghidra/dune b/lib/bap_ghidra/dune
+index edc47904..e6868d07 100644
+--- a/lib/bap_ghidra/dune
++++ b/lib/bap_ghidra/dune
+@@ -12,4 +12,4 @@
+  (foreign_stubs
+   (language c)
+   (names ghidra_stubs))
+- (c_library_flags :standard -L/usr/lib/ghidra -ldecomp))
++ (c_library_flags :standard -L@libghidra@/usr/lib/ghidra -ldecomp))
+diff --git a/oasis/ghidra b/oasis/ghidra
+index 9cbfa2f4..f0964e9c 100644
+--- a/oasis/ghidra
++++ b/oasis/ghidra
+@@ -9,7 +9,7 @@ Library bap_ghidra
+   FindlibName:   bap-ghidra
+   Modules:       Bap_ghidra
+   CCOpt:         -fPIC
+-  CCLib:         -L/usr/lib/ghidra -ldecomp
++  CCLib:         -L@libghidra@/usr/lib/ghidra -ldecomp
+   CSources:      ghidra_disasm.h,
+                  ghidra_disasm.c,
+                  ghidra_stubs.c
