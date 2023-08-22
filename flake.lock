@@ -71,14 +71,19 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1,
-        "narHash": "sha256-w4rKw3lhOpI3V8AoxWA/NQiaUvpffUfqA/0jyc2NKsU=",
-        "path": "./libghidra",
-        "type": "path"
+        "dir": "libghidra",
+        "lastModified": 1692734063,
+        "narHash": "sha256-67h5gEp5TDX6x5cixayk9+XHX6A6jNdACelOiQLCj0k=",
+        "owner": "gleachkr",
+        "repo": "bap-nix",
+        "rev": "6e9850d5d3c57f77c4d81e13ff92a0fe547f2def",
+        "type": "github"
       },
       "original": {
-        "path": "./libghidra",
-        "type": "path"
+        "dir": "libghidra",
+        "owner": "gleachkr",
+        "repo": "bap-nix",
+        "type": "github"
       }
     },
     "libghidraDev": {

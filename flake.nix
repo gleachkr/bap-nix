@@ -1,7 +1,7 @@
 { description = "An experimental flake for building CMU BAP";
   inputs.opam-nix.url = "github:tweag/opam-nix";
   inputs.flake-utils.url = "github:numtide/flake-utils";
-  inputs.libghidra.url = "path:./libghidra";
+  inputs.libghidra.url = "github:gleachkr/bap-nix/?dir=libghidra";
   inputs.bapRepo = {
     url = "github:BinaryAnalysisPlatform/bap";
     flake = false;
