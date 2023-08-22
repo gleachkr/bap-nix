@@ -71,13 +71,13 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1692306981,
-        "narHash": "sha256-oeJQZJnN+UKrqRxsGfqb9PUDuYoS6nHFLAGP8b+fpz4=",
-        "path": "/home/graham/Projects/libghidra-flake",
+        "lastModified": 1,
+        "narHash": "sha256-w4rKw3lhOpI3V8AoxWA/NQiaUvpffUfqA/0jyc2NKsU=",
+        "path": "./libghidra",
         "type": "path"
       },
       "original": {
-        "path": "/home/graham/Projects/libghidra-flake",
+        "path": "./libghidra",
         "type": "path"
       }
     },
