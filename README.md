@@ -10,13 +10,14 @@ To build a usable `bap`, on an `x86_64-linux` system:
 
 1. Make sure you have `nix` [installed](https://nixos.org/download.html). 
 
-2. Create an empty directory
+2. Create and enter an empty directory
 
 ``` 
 $ mkdir bap-nix
+$ cd bap-nix
 ```
 
-and run 
+then run 
 
 ```
 $ nix build github:gleachkr/bap-nix#cli
