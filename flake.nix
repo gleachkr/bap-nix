@@ -77,7 +77,7 @@
 
           # dune bakes the build dir into the build artifacts, 
           # so it's necessary to build directly into $out
-          buildPhase = "dune build --build-dir $out";
+          postBuild = "dune build --build-dir $out";
 
           nativeBuildInputs = oa.nativeBuildInputs ++ [ 
             final.piqi
