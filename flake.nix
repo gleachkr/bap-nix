@@ -108,6 +108,10 @@
 
     packages.frontend = self.legacyPackages.${system}.bap-frontend;
 
+    packages.build = self.legacyPackages.${system}.bap-build;
+
+    packages.bundle = self.legacyPackages.${system}.bap-bundle;
+
     packages.cli = self.legacyPackages.${system}.bap-frontend.overrideAttrs (oa :{
 
       nativeBuildInputs = oa.nativeBuildInputs ++ [pkgs.makeWrapper];
